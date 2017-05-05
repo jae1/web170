@@ -13,7 +13,7 @@
     #logo {
         display: inline-block;
         position: relative;
-        background-image: url(../images/logo2.svg);
+        background-image: url(images/logo2.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 300px;   
@@ -32,29 +32,29 @@
         clip: rect(0 0 0 0);
     }
 
-    #nav-items {
+    #menu-main-menu {
         float: right;
         position: relative;
     }
 
-    #nav-items li {
+    #menu-main-menu li {
         list-style: none;
         display: inline-block;
     }
 
-    #nav-items li a {
+    #menu-main-menu li a {
         display: block;
         padding: 0 20px;
         text-decoration: none;
     }
 
-    #nav-items li a:link,
-    #nav-items li a:visited {
+    #menu-main-menu li a:link,
+    #menu-main-menu li a:visited {
         color: #373737;
     }    
 
-    #nav-items li a:hover,
-    #nav-items li a.active {
+    #menu-main-menu li a:hover,
+    #menu-main-menu li a.active {
         color: #84bc87;
     }
     
@@ -98,28 +98,28 @@
 @media screen and (max-width:768px) {
 
     
-    #nav-items {
+    #menu-main-menu {
         float: none;
         display: none;
     }
     
-        #nav-items li {
+        #menu-main-menu li {
             display: block;
             font-size: 12px;
         }
     
-        #nav-items li:nth-child(1) {
+        #menu-main-menu li:nth-child(1) {
             margin-top: 30px;
             padding-left: 10px;
         }
 
-        #nav-items li:nth-child(n+2):nth-child(-n+4) {
+        #menu-main-menu li:nth-child(n+2):nth-child(-n+4) {
             margin-top: 8px;
             padding: 8px 0 0 10px;
             border-top: 0.5px solid #878787;
         }
 
-        #nav-items li:nth-child(4) {
+        #menu-main-menu li:nth-child(4) {
             margin-bottom: 0;
             padding-bottom: 0;
         }
