@@ -24,7 +24,7 @@
 		<!-- End WP Head function -->
 	</head>
 
-	<body <?=body_class()?>>
+	<body <?php body_class(); ?>>
 		<!-- START HEADER -->
 		<header>
 			<!-- START NAVIGATION -->
@@ -36,7 +36,7 @@
 					<span class="line"></span>
 				</div>
 				<!-- Begin WordPress Menu -->
-				<?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => false, 'menu_class' => false,)) ?>
+				<?php wp_nav_menu(array('theme_location' => 'main-menu', 'container' => false, 'menu_class' => false,)); ?>
 				<!-- End WordPress Menu -->
 			</nav>
 			<!-- END NAVIGATION -->
