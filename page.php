@@ -7,7 +7,7 @@
 	</div>
 </div>
 <!-- END PAGE TITLE -->
- 
+
 <!-- START CONTENT -->
 <div id="full-h" class="container">
 	<div class="content">
@@ -24,8 +24,8 @@
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<?php the_content(); ?>
 				</article>
-			<?php endwhile; endif; ?>			
-			<small>index.php</small>
+			<?php endwhile; endif; ?>
+			<small>page.php</small>
 		</div>
 		
 		<!-- SIDEBAR -->
