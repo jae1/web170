@@ -9,3 +9,7 @@ Description: This is a theme for my WEB170.
 Version: 1.0
 */
 
+// Register Menu Locations
+register_nav_menus(array(
+	'main-menu' => __('Main Menu'),
+));
