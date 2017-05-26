@@ -13,11 +13,3 @@ Version: 1.0
 register_nav_menus(array(
 	'main-menu' => __('Main Menu'),
 ));
-
-// Add theme support for Post Thumbnails & Featured Images
-add_theme_support('post-thumbnails');
-
-// Register Sidebar(s)
-register_sidebars(2, array(
-	'before_widget' => '<div id="%1$s class="widget %2$s">', 'after_widget' => '</div>',
-));
