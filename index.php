@@ -1,28 +1,24 @@
 <?php get_header(); ?>
 
-<!-- START PAGE TITLE -->
-<div class="container page-title">
-	<div id="page-title">
-		<h2><?php the_title(); ?></h2>
-	</div>
-</div>
-<!-- END PAGE TITLE -->
- 
 <!-- START CONTENT -->
 <div id="full-h" class="container">
 	<div class="content">
-		<div id="breadcrumb">
-			<ul class="breadcrumb">
-				<li><a href="https://jaewonjeong.com/scc/web170/wordpress/">Home</a></li>
-				<li class="active"><?php the_title(); ?></li>
-			</ul>
+		<div>
+			<?php if (function_exists('yoast_breadcrumb')) {
+				yoast_breadcrumb('<small id="breadcrumbs">','</small>');}
+			?>
 		</div>
 
 		<div id="main-content">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article id="article-<?php the_ID(); ?>" class="article">
+				<article id="post-excerpt-<?php the_ID(); ?>" class="post-excerpt">
 					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					<?php the_content(); ?>
+					<small>Posted on <?php the_time('F j, Y'); ?> by <?php the_author(); ?> in <?php the_category('|'); ?></small>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+					<p>
+						<?php echo get_the_excerpt(); ?>
+						<a href="<?php the_permalink(); ?>">Read More >></a>
+					</p>
 				</article>
 			<?php endwhile; endif; ?>			
 			<small>index.php</small>
